@@ -10,9 +10,6 @@ Collect sample images using the Google Maps API
 
 """
 import numpy as np
-import pandas as pd
-import imageio
-import matplotlib.pyplot as plt
 import requests
 
 
@@ -32,22 +29,18 @@ bottomleft = [-23.0999162,-48.9578333] #(Avare)
 
 # generate random lat/long coordinates within square
 np.random.seed(12)
-lats = np.random.uniform(topleft[0], bottomleft[0], size=10)
-longs = np.random.uniform(topleft[1], topright[1], size=10)
+lats = np.random.uniform(topleft[0], bottomleft[0], size=100)
+longs = np.random.uniform(topleft[1], topright[1], size=100)
 locations = zip(lats, longs)
 
 # collect and save the images
 for i in locations:
     # api request
-    img = requests.get(url + "center=" + str(i[0]) + ", " + str(i[1]) + 
-                       "&zoom=" + str(zoom) + "&maptype" + maptype + 
-                       "&size=" + size +"&key=" + str(api_key)) 
+    img = requests.get(url + "center=" + str(i[0]) + ", " + str(i[1]) + \
+                       "&zoom=" + str(zoom) + "&maptype=" + maptype + \
+                       "&size="+ size +"&key=" + str(api_key)) 
     
     # write to file 
     f = open("lat" + str(i[0]) + "_long " + str(i[1])+'_map.png', 'wb') 
     f.write(img.content) 
     f.close()
-
-
-
-    
