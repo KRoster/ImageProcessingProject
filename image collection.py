@@ -41,7 +41,7 @@ for i in locations:
     # api request
     img = requests.get(url + "center=" + str(i[0]) + ", " + str(i[1]) + 
                        "&zoom=" + str(zoom) + "&maptype" + maptype + 
-                       "&size=" size +"&key=" + str(api_key)) 
+                       "&size=" + size +"&key=" + str(api_key)) 
     
     # write to file 
     f = open("lat" + str(i[0]) + "_long " + str(i[1])+'_map.png', 'wb') 
