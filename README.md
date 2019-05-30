@@ -1,6 +1,6 @@
 
 # Extracting Forest Areas in Google Maps Aerial Images
-Kirstin Roster
+**Kirstin Roster - NUSP: 11375819**
 
 
 This project aims to identify forest areas in Google Maps aerial images. After preliminary noise reduction, this will be achieved through (i) segmenting the images into separate regions and (ii) classifying tree-covered areas. The output will consist of the original Google maps images overlayed with labels of forest areas. In addition to color and texture analysis, I will compute several vegetation indices to help identify areas with forest cover, including the Color Index of Vegetation (CIVE), the Woebbecke index (WI), the Excess Green index (ExG) and the Excess Green minus Excess Red index (ExGR). Different methods of segmentation will be tested, including thresholding and clustering. After extracting forest areas, additional analysis may include measuring forest coverage from the pixel share of identified forest areas or overlaying the forest maps with geo-coded economic data, such as industry locations. 
@@ -14,6 +14,7 @@ The images are sourced from the Google Maps static maps API, centered at randoml
 
 
 **Context:**
+
 Global forest coverage has declined continuously [since at least 1992](https://data.worldbank.org/indicator/ag.lnd.frst.zs) due to, for example, economic exploration of the rainforest. Reducing deforestation is an important contributor to climate change mitigation, the first step of which is effective monitoring of forest areas. The [value of monitoring forest areas](https://globalforestatlas.yale.edu/conservation/forest-monitoring) has been demonstrated in many contexts and various organizations invest in research projects to better map tree cover. For example, [Global Forest Watch](https://www.globalforestwatch.org/map) publicly share their global map of forest cover including tree gain and loss over time. Analysis based on this map can be used to detect and respond to illegal mining and deforestation activities, report on forest fires, or assess environmental risks of businesses.
 
-This image processing project aims to exemplify how forest areas can be monitored using publicly available satellite data. Later implementations can be expanded globally and historically to monitor changes over time. They can also make use of the many advanced image processing libraries available.
+This image processing project aims to exemplify how forest areas can be monitored using publicly available satellite data. Later implementations can be expanded globally and historically to monitor changes over time. 
