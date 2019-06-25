@@ -20,3 +20,18 @@ Global forest coverage has declined continuously [since at least 1992](https://d
 This image processing project aims to exemplify how forest areas can be monitored using publicly available satellite data. Later implementations can be expanded globally and historically to monitor changes over time. 
 
 
+**Description of Files:**
+
+Final Report: Description of methods and results
+
+Demo: Folder containing script, functions and a sample image with its haralick features, in order to implement an example of the full pipeline for forest area extraction.
+
+Results: Folder containing results of all sample satellite images. For each image, the folder contains clustering results (color and grayscale) and the three different classification results (raw, std, rgb).
+
+haralick computation.py: Separate script for computing Haralick descriptors for the 7x7 neighborhood around each pixel of an image.
+
+helper_functions.py: Functions for color processing, vegetation indices computation, feature generation, clustering, classification, mathematical morphology, etc. 
+
+image collection.py: Script to download relevant static maps from Google Maps API.
+
+Sample images: Folder containing a small set of sample images.
