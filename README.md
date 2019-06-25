@@ -28,6 +28,8 @@ Demo: Folder containing script, functions and a sample image with its haralick f
 
 Results: Folder containing results of all sample satellite images. For each image, the folder contains clustering results (color and grayscale) and the three different classification results (raw, std, rgb).
 
+full pipeline.py: Script to generate final results. Makes use of helper functions and haralick computation below.
+
 haralick computation.py: Separate script for computing Haralick descriptors for the 7x7 neighborhood around each pixel of an image.
 
 helper_functions.py: Functions for color processing, vegetation indices computation, feature generation, clustering, classification, mathematical morphology, etc. 
