@@ -1,6 +1,6 @@
 
 # Extracting Forest Areas in Google Maps Aerial Images
-**Kirstin Roster - NUSP: 11375819**
+**Kirstin Roster**
 
 
 This project aims to identify forest areas in Google Maps aerial images, by (i) segmenting the images into separate regions and (ii) classifying tree-covered areas. The output consists of the original Google maps images overlayed with outlines of forest areas. I use features related to color, texture, and vegetation of pixels and their neighbors, including the Color Index of Vegetation (CIVE), the Woebbecke index (WI), the Excess Green index (ExG) and the Excess Green minus Excess Red index (ExGR) as well as Haralick descriptors. K-means clustering successfully separates forest areas. Cosine similarity and RGB classification are employed to classify clusters consisting mostly of forest areas. Finally, mathematical morphology techniques help clean the segmentation and generate an outline. The results can be used for additional analysis such as measuring the share of forest coverage.  
